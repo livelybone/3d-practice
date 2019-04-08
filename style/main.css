@@ -1,0 +1,254 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    letter-spacing: 0.02rem;
+    font-family: 'Microsoft YaHei';
+}
+
+@font-face {
+    font-family: 'YueHei';
+    src: url('fonts/MFYueHei_Noncommercial-Regular.otf');
+}
+
+@font-face {
+    font-family: 'ShangHei';
+    src: url('fonts/MFShangHei_Noncommercial-Regular.otf');
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('img/Background.jpg') no-repeat left top;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    overflow: hidden;
+    border-spacing: 0;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+th, td {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 10px;
+    text-align: center;
+}
+
+th {
+    height: 10.8%;
+    color: #a8ebff;
+    font: 500 0.24rem 'YueHei';
+}
+
+td {
+    height: 9.7%;
+    color: #00ffff;
+    font-size: 0.18rem;
+}
+
+.link {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+    z-index: 10;
+    font-size: 0.24rem;
+    color: rgba(168, 235, 255, 0.8);
+}
+
+.trade-line1 {
+    width: 3.75rem;
+}
+
+.trade-line2 {
+    text-align: justify;
+    width: 5.625rem;
+}
+
+.trade-line3 {
+    width: 3.0rem;
+}
+
+.line1 {
+    width: 1.95rem;
+}
+
+.line2 {
+    width: 5.21rem;
+}
+
+.line3 {
+    width: 2.21rem;
+}
+
+.line4 {
+    width: 3.12rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#canvas-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 75%;
+    padding: 0.20rem;
+}
+
+.data-statistics {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.data-statistics section {
+    align-items: center;
+    margin: 0 0.40rem 0 0;
+}
+
+h1 {
+    padding: 0.25rem 0.30rem 0;
+    font-size: 0.60rem;
+    font-weight: 300;
+}
+
+.mt-number-animate {
+    height: 0.70rem;
+    overflow: hidden;
+}
+
+.mt-number-animate-dom {
+    height: 7.7rem;
+}
+
+.mt-number-animate-dot {
+    height: 0.7rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.3rem;
+    font-family: 'ShangHei';
+    margin-top: 0.18rem;
+}
+
+.mt-number-animate-span {
+    align-items: center;
+    height: 0.7rem;
+    font-family: 'ShangHei';
+    color: #00fdfd;
+}
+
+.data-statistics section .span {
+    font-size: 0.24rem;
+}
+
+canvas {
+    position: absolute;
+    z-index: 2;
+    left: 0.2rem;
+    top: 0.2rem;
+}
+
+.bottom-tables {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 0.20rem;
+}
+
+.table-box {
+    position: relative;
+    z-index: -3;
+    border: 1px solid #005891;
+    border-radius: 2px;
+    margin: 0 0.20rem 0 0;
+    width: 12.5rem;
+    height: 28%;
+    background: rgba(0, 0, 0, .09) url('img/bg3.png') repeat;
+}
+
+#latest-block {
+    margin: 0;
+}
+
+.table-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-width: 16px;
+    border-image: url('img/border.png') 17 17 17 17 round;
+}
+
+.table-box header {
+    position: relative;
+    z-index: -2;
+    align-items: center;
+    justify-content: center;
+    height: 11%;
+    color: #02c3fe;
+    font-size: 0.3rem;
+    font-family: 'MFYueHei_Noncommercial-Regular';
+    background-color: #00213b;
+}
+
+#others {
+    justify-content: flex-end;
+    width: 5.2rem;
+    height: 100%;
+}
+
+#others .table-box {
+    margin: 0 0 0.20rem;
+}
+
+#others .table-box:last-child {
+    margin: 0;
+}
+
+.chart {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 89%;
+}
+
+.chart img {
+    width: 80%;
+}

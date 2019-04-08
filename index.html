@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>保全数据</title>
+  <link rel="shortcut icon" href="style/img/logo.ico">
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <script src="http://cdn.bootcss.com/socket.io/1.3.7/socket.io.js"></script>
+  <!--<script src="../script/socket.io.js"></script>-->
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          crossorigin="anonymous"></script>
+  <!--<script src="jquery-1.11.2.min.js"></script>-->
+  <script src="script/dataAnimation.js"></script>
+  <script src="script/three.js"></script>
+  <script src="script/common.js"></script>
+  <script src="script/main-3d.js"></script>
+  <style id="style"></style>
+</head>
+<body>  
+<!--<a class="link" href="index-2d.html">2D版</a>-->
+<div id="canvas-box">
+  <div class="data-statistics flex-row">
+    <section class="flex-column">
+      <h1 id="block-height">4654132</h1>
+      <span class="span">当前区块高度</span>
+    </section>
+    <section class="flex-column">
+      <h1 id="user-count">4654132</h1>
+      <span class="span">用户总数</span>
+    </section>
+    <section class="flex-column">
+      <h1 id="trade-count">4654132</h1>
+      <span class="span">交易笔数</span>
+    </section>
+  </div>
+</div>
+<div class="bottom-tables flex-row">
+  <div class="table-box" id="latest-trade">
+    <header class="flex-row">最新交易</header>
+    <div class="table">
+      <table>
+        <thead>
+        <tr>
+          <th class="trade-line1">所属应用</th>
+          <th class="trade-line2">交易ID</th>
+          <th class="trade-line3">交易时间</th>
+        </tr>
+        </thead>
+        <tbody id="trade"></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="table-box" id="latest-block">
+    <header class="flex-row">最新区块</header>
+    <div class="table">
+      <table>
+        <thead>
+        <tr>
+          <th class="line1">区块高度</th>
+          <th class="line2">区块ID</th>
+          <th class="line3">子区块数</th>
+          <th class="line4">出块时间</th>
+        </tr>
+        </thead>
+        <tbody id="block"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
